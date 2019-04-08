@@ -1,7 +1,11 @@
-body {
-  width: 960;
+html {
   font-size: 18px;
   line-height: 1.4;
+  font-family: Helvetica;
+}
+
+.container {
+    width: 960px;
 }
 /* Main Picture */
 
@@ -12,6 +16,32 @@ body {
   background-size: cover;
   height: 30rem;
   width: auto;
+  color: white;
 }
 
 /* LOGO n NAV bar */
+
+.logo-banner {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+.logo-banner .logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 1.5rem;
+  width: auto;
+  margin: 0 1rem 0 2rem;
+}
+.logo-banner nav {
+  margin: 1rem 2rem 1rem 0
+}
+.logo-banner nav span a {
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+}
