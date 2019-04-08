@@ -1,0 +1,17 @@
+body {
+  width: 960;
+  font-size: 18px;
+  line-height: 1.4;
+}
+/* Main Picture */
+
+.main-pic {
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  width: auto;
+}
+
+/* LOGO n NAV bar */
