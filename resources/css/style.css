@@ -23,7 +23,23 @@ body {
   width: auto;
   color: white;
 }
-
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 850px;
+  }
+  .main-pic {
+    height: 22rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+  .main-pic {
+    background-position: 20%;
+    height: 17rem;
+  }
+}
 /* LOGO n NAV bar */
 
 .logo-banner {
@@ -51,17 +67,25 @@ body {
   color: white;
   text-decoration: none;
 }
+.logo-banner nav.menu {
+  display: none;
+}
 
-@media only screen and (max-width: 940px) {
-  .main-pic {
-    height: 22rem;
-  }
+@media only screen and (max-width: 850px) {
   .logo-banner {
     width: 100%;
     top: 0;
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .logo-banner nav.web-tab {
+    display: none;
+  }
+  .logo-banner nav.menu {
+    display: block;
+  }
+}
 /* Look, See */
 
 .dont {
@@ -80,13 +104,24 @@ body {
   margin-right: -2rem;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 850px) {
   .look-see {
     font-size: 1.33rem;
     width: 16rem;
     padding: .75rem 4rem;
     margin-top: 5rem;
     margin-right: 5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .look-see {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 12rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
   }
 }
 
@@ -114,6 +149,20 @@ body {
   width: 3.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .process {
+    flex-direction: column;
+    margin: 3.77rem 0;
+    font-size: 0.77rem;
+  }
+  .process .fitting {
+    margin: 1.54rem 0;
+  }
+  .step img {
+    margin-bottom: 0;
+  }
+}
+
 /* Philosophy / Appointments */
 
 .appt-sched {
@@ -127,13 +176,36 @@ body {
   font-weight: bold;
   font-size: 1rem;
   padding: .5rem 0 .5rem 1.25rem;
-  width: 10rem;
+  width: 12rem;
   background-color: cadetblue;
   color: white;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-
+@media only screen and (max-width: 850px) {
+  .box {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .appt-sched {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+  .box h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .box p {
+    width: 85%;
+    margin: auto;
+    font-size: .77rem;
+  }
+}
 /* FOOTER */
 
 footer {
@@ -144,4 +216,17 @@ footer {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    justify-content: center;
+    padding: 5rem 0;
+  }
+  footer img {
+    margin-right: 0;
+  }
+  footer h6 {
+    display: none;
+  }
 }
